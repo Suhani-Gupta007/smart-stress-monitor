@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(to bottom right, #f8f4e3, #fdfaf0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #4a4a4a;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #5a5a5a;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    width: 260px;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #7b8fa1;
+}
+
+.card p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Heartbeat animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+#bpm {
+    animation: pulse 1s infinite;
+}
+
+/* State badge style */
+#state {
+    padding: 6px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+button {
+    margin-bottom: 25px;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #7b8fa1;
+    color: white;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #5a6d7c;
+}
+
+/* Dark Mode Styles */
+body.dark {
+    background: linear-gradient(to bottom right, #1e1e2f, #2c2c3e);
+    color: #f5f5f5;
+}
+
+body.dark .card {
+    background: rgba(40, 40, 60, 0.9);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+body.dark h1 {
+    color: #ffffff;
+}
+
+body.dark .card h2 {
+    color: #c5c6d0;
+}
+

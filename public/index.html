@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Stress Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🌿 Smart Stress Monitor</h1>
+    <button id="themeToggle">🌙 Dark Mode</button>
+
+
+    <div class="cards">
+        <div class="card">
+            <h2>Heart Rate</h2>
+            <p id="bpm">--</p>
+        </div>
+
+        <div class="card">
+            <h2>Activity Level</h2>
+            <p id="activity">--</p>
+        </div>
+
+        <div class="card">
+            <h2>State</h2>
+            <p id="state">--</p>
+        </div>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
