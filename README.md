@@ -15,7 +15,7 @@ A real-time stress monitoring web application that simulates IoT sensor data (he
 - Socket.io
 - HTML, CSS, JavaScript
 
-## 📦 How to Run
+## How to Run
 
 1. Install dependencies:
    npm install
@@ -25,3 +25,8 @@ A real-time stress monitoring web application that simulates IoT sensor data (he
 
 3. Open browser:
    http://localhost:3000
+   
+## Sensors used
+- Heart rate sensor
+- Accelomotor
+  NOTE: During online simulation potentiometers are used in place of sensors.
