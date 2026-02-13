@@ -25,10 +25,3 @@ A real-time stress monitoring web application that simulates IoT sensor data (he
 
 3. Open browser:
    http://localhost:3000
-
-## 🔧 Tinkercad Simulation
-
-View the IoT simulation of Smart Stress Monitor in Tinkercad:
-
-[Tinkercad Project](<img width="1440" height="803" alt="Glorious Wluff" src="https://github.com/user-attachments/assets/0f847246-4dff-4bf5-a306-418d3e2f8f32" />
-)
